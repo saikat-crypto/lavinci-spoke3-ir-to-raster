@@ -1,0 +1,38 @@
+{
+  "name": "@lavinci/v4-ir-to-raster",
+  "version": "4.0.0",
+  "description": "High-fidelity Vector CAD IR to Raster (PNG/JPEG/WEBP) Compiler",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test:raster": "node dist/testRasterRunner.js"
+  },
+  "keywords": [
+    "cad",
+    "raster",
+    "resvg",
+    "sharp",
+    "image"
+  ],
+  "author": "Saikat Dutta Chowdhury",
+  "license": "ISC",
+  "dependencies": {
+    "@lavinci/v4-ir-to-svg": "file:../v4-ir-to-svg",
+    "@resvg/resvg-js": "^2.6.2",
+    "bmp-js": "^0.1.0",
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "@types/bmp-js": "^0.1.2",
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
